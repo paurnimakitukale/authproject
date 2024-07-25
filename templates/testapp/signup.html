@@ -1,0 +1,15 @@
+{%extends 'testapp/index.html'%}
+{%block body_block%}
+<div class="jumbotron">
+   <div class="container">
+      <h1>please fill up to  Signup form</h1>
+      <form action="" method="post">
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type="submit" value="signup">
+
+      </form>
+      
+   </div>
+</div>
+{%endblock%}
